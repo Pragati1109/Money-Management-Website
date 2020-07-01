@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Lifestyle Store</title>
+        <title>Register</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
@@ -27,11 +27,10 @@ and open the template in the editor.
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="index.php">Lifestyle Store</a>
+                    <a class="navbar-brand" href="index.php">Budget Tracker</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                         <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     </ul>
                 </div>
@@ -44,7 +43,7 @@ and open the template in the editor.
                 <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
                     <div class="panel">
                         <div class='panel-info'>
-                            <h3><b>SIGN UP</b></h3>                            
+                            <h2><b>SIGN UP</b></h2>                            
                         </div>
                         <div class="panel-body">                           
                             <form>
@@ -79,7 +78,7 @@ and open the template in the editor.
         <footer>
             <div class="container">
                 <center>
-                    <p>Copyright © Lifestyle Store. All Rights Reserved | Contact Us: +91 90000 00000.</P>
+                    <p>Copyright © Budget Tracker. All Rights Reserved | Contact Us: +91 90000 00000.</P>
             </div>
         </footer>
     </div>

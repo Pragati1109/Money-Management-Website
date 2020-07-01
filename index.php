@@ -11,7 +11,7 @@ Technology​: Any
 -->
 <html>
     <head>
-        <title>Manage It Right</title>
+        <title>Budget Tracker</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
@@ -53,7 +53,7 @@ Technology​: Any
                         <h1>It’s all coming together</h1>
                         <p>When you’re on top of your money, life is good. 
                         <p>We help you effortlessly manage your finances in one place</p>
-                        <a href="products.html" class="btn btn-danger btn-lg active">Sign Up for Free</a>
+                        <a href="signup.php" class="btn btn-danger btn-lg active">Sign Up for Free</a>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@ Technology​: Any
         <footer>
             <div class="container">
                 <center>
-                    <p>Copyright © Manage It Right. All Rights Reserved | Contact Us: +91 90000 00000.</P>
+                    <p>Copyright © Budget Tracker. All Rights Reserved | Contact Us: +91 90000 00000.</P>
             </div>
         </footer>
     </body>

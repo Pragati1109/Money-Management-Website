@@ -14,19 +14,6 @@ body{
     margin: 0;
 }
 
-.body_{
-    background: linear-gradient(rgba(0,0,50,0.5)rgba(0,0,50,0.5)),url(img/2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.login-box{
-    max-width: 700px;
-    float: none;
-    margin: 150px auto;
-    background: rgba(0,0,50,0.5);
-    padding: 30px;
-}
-
 #banner-image{
     min-height:600px;
     margin-bottom: 20px;

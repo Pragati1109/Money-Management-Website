@@ -17,7 +17,7 @@ and open the template in the editor.
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <div class='body_'>
+        
         <!-- The header of the index page-->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -27,7 +27,7 @@ and open the template in the editor.
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
-                    <a class="navbar-brand" href="index.php">Lifestyle Store</a>
+                    <a class="navbar-brand" href="index.php">Budget Tracker</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
@@ -39,10 +39,8 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-       
         <!--login form-->
         <div class="container top">
-            <div class='login-box'>
             <div class="row">                
                 <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
                     <!--
@@ -74,17 +72,14 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
-        </div>
-        
         
         <!--Footer of index page-->
         <footer>
             <div class="container">
                 <center>
-                    <p>Copyright © Lifestyle Store. All Rights Reserved | Contact Us: +91 90000 00000.</P>
+                    <p>Copyright © Budget Tracker. All Rights Reserved | Contact Us: +91 90000 00000.</P>
             </div>
         </footer>
-    </div>
     </body>
 </html>
         
