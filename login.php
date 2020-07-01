@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Lifestyle Store</title>
+        <title>User Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
@@ -17,7 +17,7 @@ and open the template in the editor.
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        
+        <div class='body_'>
         <!-- The header of the index page-->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -32,7 +32,9 @@ and open the template in the editor.
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <!--
+                        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> 
+                        -->
                     </ul>
                 </div>
             </div>
@@ -40,28 +42,35 @@ and open the template in the editor.
        
         <!--login form-->
         <div class="container top">
+            <div class='login-box'>
             <div class="row">                
                 <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
+                    <!--
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3>LOGIN</h3>                            
+                        -->
+                            <h2>LOGIN</h2>                            
+                        <!--
                         </div>
+                        -->
                         <div class="panel-body">
                             <div class='text-warning'>
-                                <p>Login to make a purchase</p>
+                                <p>Login to begin!!</p>
                             </div>
-                            <form>
+                            <form action='validation.php' method='post'>
                                 <div class='form-group'>
+                                    <label>Username/E-mail</label>
                                     <input class='form-control' type='email' placeholder='Email' name='email' required='true'>
                                 </div>
                                 <div class='form-group'>
+                                    <label>Password</label>
                                     <input class='form-control' type='password' placeholder='Password' name='password' required='true'>
                                 </div>
                                 <button type='submit' name='submit' class='btn btn-primary'>Login</button>
                             </form>
                             
                         </div>
-                        <div class="panel-footer">Don't have an account?<a href='signup.html'>Register</a></div>
+                        <div>Don't have an account? <a href='signup.php'>Register</a></div>
                     </div>
                 </div>
             </div>
