@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>User Login</title>
@@ -11,18 +6,18 @@ and open the template in the editor.
         include 'sub/head.php';
         ?>
     </head>
-    <body>
+    <body style='background: url(img/4); background-size: cover'>
         
         <?php
         include 'sub/navbar.php';
         ?>
         
         <!--login form-->
-        <div class="container top">
+        <div class="container top" style='background: rgba(0,0,0,0.7); max-width: 700px; padding: 30px; margin: 90px auto;color: #f8f8f8'>
             <div class="row">                
                 <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
                     
-                            <h2>LOGIN</h2>                            
+                    <h1><b><center>LOG IN</center></b></h1>                            
                         
                         <div class="panel-body">
                             <div class='text-warning'>

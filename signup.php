@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Register</title>
@@ -11,20 +6,19 @@ and open the template in the editor.
         include 'sub/head.php'
         ?>
     </head>
-    <body>
+    <body style='background: url(img/4); background-size: cover'>
         
         <?php
         include 'sub/navbar.php';
         ?>
        
         <!--signup form-->
-        <div class="container top">
+        <div class="container top" style='background: rgba(0,0,0,0.7); max-width: 700px; padding: 30px; margin: 90px auto;color: #f8f8f8'>
             <div class="row">                
                 <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-2">
-                    <div class="panel">
-                        <div class='panel-info'>
-                            <h2><b>SIGN UP</b></h2>                            
-                        </div>
+                    
+                    <h1><b><center>SIGN UP</center></b></h1>                            
+                        
                         <div class="panel-body">                           
                             <form action='register_.php' method='post'>
                                 <div class='form-group'>
@@ -51,7 +45,7 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
-        </div>
+        
         
         
        <?php 

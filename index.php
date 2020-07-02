@@ -31,10 +31,9 @@
         </div>
         
         
-       <?php 
+       <?php
        include 'sub/footer.php';
        ?>
-        
         
     </body>
 </html>
