@@ -6,7 +6,7 @@ header('location: login.php');
 
 $con = mysqli_connect('localhost','root','');
 
-mysqli_select_db($con,'budgettracker');
+mysqli_select_db($con,'mm');
 
 $name = $_POST['name'];
 $mail = $_POST['email'];
