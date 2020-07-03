@@ -4,7 +4,7 @@ session_start();
 
 header('location: login.php');
 
-$con = mysqli_connect('localhost','root','');
+$con = mysqli_connect('localhost','root');
 
 mysqli_select_db($con,'budgettracker');
 
@@ -15,7 +15,7 @@ $contact = $_POST['contact'];
 $city = $_POST['city'];
 $address = $_POST['address'];
 
-$s = "select * from userdata where email = '$name'";
+$s = "select * from userdata where name = '$name'";
 
 $result = mysqli_query($con,$s);        
 

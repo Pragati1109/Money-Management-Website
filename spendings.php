@@ -49,8 +49,7 @@
         include 'sub/navbar2.php'
         ?>
         
-        
-        
+              
          <div class="container bottom" style='position:absolute; top: 100px;left:10px; align-items: center !important'>
             <div>
                 <div class="col-sm-4">
@@ -70,14 +69,18 @@
         <div class='bg-modal'>
             <div class='modal-content'>
                 <div class='close'>+</div>
-                <h2><b>Spending</b></h2>
-                <form action=''>
-                    <input type='text' placeholder='Title'><br><br>
-                    <input type='number' placeholder='Amount'><br><br>
-                    <a href='' class='button'>Submit</a><br>
+                <h2><b>Spending</b></h2><br>
+                <form action='spend_.php' method='post'>
+                    <label>Enter title</label><br>
+                    <input type='text' placeholder='Title' name='title'><br>
+                    <label>Enter amount</lable><br>
+                    <input type='number' placeholder='Amount' name='amount'><br><br><br>
+                    <button type='submit' name='submit' class='btn btn-primary'>Submit</button><br><br><br>
                 </form>
             </div>
         </div> 
+        
+        
         <script>
             document.getElementById('popup').addEventListener('click', function(){
             document.querySelector('.bg-modal').style.display = 'flex';  
