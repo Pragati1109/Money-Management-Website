@@ -42,7 +42,7 @@ if(!isset($_SESSION['username'])){
                 
                 <div class="col-sm-4">
                     <div class="thumbnail">
-                        <img src="img/1.jpg">
+                        <a href='spendings.php'><img src="img/Spendings.png"></a>
                         <div class="caption">
                             <center>
                             <h3>Spendings</h3>
@@ -53,7 +53,7 @@ if(!isset($_SESSION['username'])){
                     
                         <div class="col-sm-4">
                             <div class="thumbnail">
-                                <img src="img/7.jpg>
+                                <a href='budget.php'><img src="img/Budget.png"></a>
                                 <div class="caption">
                                     <center>
                                         <h3>Budget</h3>
@@ -64,7 +64,7 @@ if(!isset($_SESSION['username'])){
                     
                         <div class="col-sm-4">
                             <div class="thumbnail">
-                                <img src="img/8.jpg">
+                                <a href='history.php'><img src="img/History.png"></a>
                                 <div class="caption">
                                     <center>
                                         <h3>History</h3>
