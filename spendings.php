@@ -65,10 +65,8 @@
             </div>
          </div>
         
-        
         <div class='bg-modal'>
             <div class='modal-content'>
-                <div class='close'>+</div>
                 <h2><b>Spending</b></h2><br>
                 <form action='spend_.php' method='post'>
                     <label>Enter title</label><br>
@@ -76,7 +74,9 @@
                     <label>Enter amount</lable><br>
                     <input type='number' placeholder='Amount' name='amount'><br><br><br>
                     <button type='submit' name='submit' class='btn btn-primary'>Submit</button><br><br><br>
+                    
                 </form>
+                <div class='close'>+</div>
             </div>
         </div> 
         
