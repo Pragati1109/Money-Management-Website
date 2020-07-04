@@ -1,5 +1,15 @@
 <!DOCTYPE html>
+
+<?php
+session_start();
+$con = mysqli_connect("localhost","root","",'MM') or die(mysqli_error($con));
+$name = $_SESSION['username'];
+$select_query = "select title,amount from spend where name = '$name'";
+$select_query_result = mysqli_query($con,$select_query) or die(mysqli_error($con));
+?>
+
 <html>
+    
     <head>
         <meta charset="UTF-8">
         <title>Spendings</title>
@@ -44,6 +54,7 @@
         </style>
     </head>
     
+    
     <body>
         <?php
         include 'sub/navbar2.php'
@@ -52,6 +63,7 @@
               
          <div class="container bottom" style='position:absolute; top: 100px;left:10px; align-items: center !important'>
             <div>
+                
                 <div class="col-sm-4">
                     <div class="thumbnail">
                         <a href='#' id='popup'><img src="img/Spendings.png"></a>
@@ -62,6 +74,43 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class ="col-sm-7">
+                    <div class="thumbnail">
+                        <?php 
+                        $n=0;
+                        $total=0;
+                        ?>
+                        <table class="table table-striped table-hover">
+                            <tbody>
+                                <tr>                                  
+                                    <th colspan="3" style="text-align:center"><?php echo "<h3>Here is your budget sheet, </h3>"."<h3>$name</h3>"?></th>
+                                </tr>
+                                <tr style="text-align: center">
+                                    <th>Sr. No</th>
+                                    <th>Title</th>
+                                    <th style="text-align:right">Amount</th>
+                                </tr>
+                                <?php while($row = mysqli_fetch_array($select_query_result)){?>
+                                <?php $n = $n + 1; ?>           
+                                <tr>
+                                    <td><?php echo "$n";?></td>
+                                    <td><?php echo "$row[0]";?></td>
+                                    <td style="text-align: right;"><?php echo "$row[1]"."/-";?></td>
+                                </tr>
+                                <?php
+                                $total = $total + $row[1];
+                                ?>
+                                <?php }?>
+                                <tr>
+                                    <th colspan="2" style="text-align: center"><h4>Total Spendings:</h4></th>
+                                    <th style='text-align:right; color:red;'><?php echo "<h4>- "."$total</h4>";?></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
             </div>
          </div>
         
@@ -90,6 +139,7 @@
             document.querySelector('.bg-modal').style.display = 'none';
             });
         </script>
+        
         
         <?php
         include 'sub/footer.php';
