@@ -2,7 +2,8 @@
 
 session_start();
 
-$con = mysqli_connect('localhost', 'root', '');
+include "sub/con1.php";
+
 if (!$con) {
   die('Not connected : ' . mysql_error());
 }
@@ -20,6 +21,8 @@ $table_ = mysqli_query($con,$table);
 if(!$table_){
     $create = "create table userdata(name varchar(255) not null, email varchar(255) not null, password varchar(255) not null, contact int(10) not null, city varchar(255) not null, address varchar(255) not null)";
     mysqli_query($con,$create);
+    $creat = "create table spend(name varchar(255) not null, title varchar(255) not null, amount int(255) not null, date date default current_timestamp())";
+    mysqli_query($con,$creat);
 }
 
         
