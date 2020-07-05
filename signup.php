@@ -39,7 +39,7 @@
                                 <div class='form-group'>
                                     <input class='form-control' type='text' placeholder='Address' name='address' required>
                                 </div>
-                                <button type='submit' name='submit' class='btn btn-primary'>Submit</button>
+                                <button type='submit' name='submit' class='btn btn-primary'>Sign Up</button>
                             </form>
                         </div>
                     </div>
