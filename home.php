@@ -96,6 +96,19 @@ $select_query_result_2 = mysqli_query($con,$select_query_2) or die(mysqli_error(
                                     <br><br>
                                     <br><br><br>
                                 </div>
+                                <?php }elseif(($budget-$total_)<=(0.1*$budget)){?>
+                                
+                                <div style="text-align:center;justify-content:center;color:red">
+                                    <h1>Warning!!!</h1>
+                                    <h2>Your amount left if less than 10% of the Budget.</h2>
+                                    <br>
+                                    <br>
+                                <?php $amt_l = $budget - $total_; ?>
+                                    <h1><center><b>Amount left</b></center></h1>
+                                    <h1><center><b><?php echo "Rs. "."$amt_l"."/-";?></b></center></h1>
+                                    <br>
+                                    <br><br>
+                                    <br><br><br>                              
                                 <?php }else{?>
                                 <div class="thumbnail">
                                 <img src="img/smile1.png">
