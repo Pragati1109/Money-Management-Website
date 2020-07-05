@@ -102,6 +102,11 @@ $select_query_result_3 = mysqli_query($con,$select_query_3) or die(mysqli_error(
                             <h2><center>Warning: You have crossed your spending limit.</center></h2>                                  
                             <h1><center>Over Spending!!!</center></h1>
                         </div>
+                        <?php }elseif(($budget-$total_)<=(0.1*$budget)){?>
+                        <div style="text-align:center;color: red;">
+                            <h2><center>Warning: Amount left is less than 10% of Budget..</center></h2>                                  
+                            <h1><center>Beware!!!</center></h1>
+                        </div>
                         <?php }?>
                         <table class="table table-striped table-hover">
                             <tbody>                               
