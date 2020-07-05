@@ -25,8 +25,8 @@
                             </div>
                             <form action='validation_.php' method='post'>
                                 <div class='form-group'>
-                                    <label>Username/E-mail</label>
-                                    <input class='form-control' type='text' placeholder='username' name='name' required='true'>
+                                    <label>Name</label>
+                                    <input class='form-control' type='text' placeholder='Name' name='name' required='true'>
                                 </div>
                                 <div class='form-group'>
                                     <label>Password</label>

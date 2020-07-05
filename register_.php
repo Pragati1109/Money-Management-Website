@@ -23,6 +23,8 @@ if(!$table_){
     mysqli_query($con,$create);
     $creat = "create table spend(name varchar(255) not null, title varchar(255) not null, amount int(255) not null, date date default current_timestamp())";
     mysqli_query($con,$creat);
+    $create = "create table budget(name varchar(255) not null, budget int(255) not null)";
+    mysqli_query($con,$create);
 }
 
         
@@ -33,7 +35,7 @@ $contact = $_POST['contact'];
 $city = $_POST['city'];
 $address = $_POST['address'];
 
-$s = "select * from userdata where name = '$name'";
+$s = "select * from userdata where email = '$mail'";
 
 $result = mysqli_query($con,$s);        
 

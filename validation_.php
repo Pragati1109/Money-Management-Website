@@ -12,7 +12,7 @@ $name = $_POST['name'];
 $mail = $_POST['email'];
 $pass = $_POST['password'];
 
-$s = "select * from userdata where name = '$name' && password = '$pass'";
+$s = "select * from userdata where name = '$name' && password = '$pass'" or "select * from userdata where email = '$mail' && password = '$pass'";
 
 $result = mysqli_query($con,$s);        
 

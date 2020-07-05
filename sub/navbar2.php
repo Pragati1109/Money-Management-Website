@@ -11,9 +11,9 @@
                 
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-left">
-                        <li><a href="spendings.php"><span class="glyphicon glyphicon-usd"></span>Spendings</a></li>
-                        <li><a href="budget.php"><span class="glyphicon glyphicon-list-alt"></span>Budget</a></li>
-                        <li><a href="history.php"><span class="glyphicon glyphicon-tasks"></span>History</a></li>
+                        <li><a href="budget.php"><span class="glyphicon glyphicon-usd"></span>Budget</a></li>
+                        <li><a href="Spendings.php"><span class="glyphicon glyphicon-list-alt"></span>Spendings</a></li>
+                        <li><a href="aboutus.php"><span class="glyphicon glyphicon-tasks"></span>About Us</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="logout_.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
