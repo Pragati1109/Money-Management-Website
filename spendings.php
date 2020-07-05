@@ -4,7 +4,7 @@
 session_start();
 $con = mysqli_connect("localhost","root","",'MM') or die(mysqli_error($con));
 $name = $_SESSION['username'];
-$select_query = "select title,amount from spend where name = '$name'";
+$select_query = "select title,amount,date from spend where name = '$name'";
 $select_query_result = mysqli_query($con,$select_query) or die(mysqli_error($con));
 ?>
 
@@ -84,11 +84,12 @@ $select_query_result = mysqli_query($con,$select_query) or die(mysqli_error($con
                         <table class="table table-striped table-hover">
                             <tbody>
                                 <tr>                                  
-                                    <th colspan="3" style="text-align:center"><?php echo "<h3>Here is your budget sheet, </h3>"."<h3>$name</h3>"?></th>
+                                    <th colspan="4" style="text-align:center"><?php echo "<h3>Here is your budget sheet, </h3>"."<h3>$name</h3>"?></th>
                                 </tr>
                                 <tr style="text-align: center">
                                     <th>Sr. No</th>
                                     <th>Title</th>
+                                    <th>Date</th>
                                     <th style="text-align:right">Amount</th>
                                 </tr>
                                 <?php while($row = mysqli_fetch_array($select_query_result)){?>
@@ -96,6 +97,7 @@ $select_query_result = mysqli_query($con,$select_query) or die(mysqli_error($con
                                 <tr>
                                     <td><?php echo "$n";?></td>
                                     <td><?php echo "$row[0]";?></td>
+                                    <td><?php echo "$row[2]";?></td>
                                     <td style="text-align: right;"><?php echo "$row[1]"."/-";?></td>
                                 </tr>
                                 <?php
@@ -103,7 +105,7 @@ $select_query_result = mysqli_query($con,$select_query) or die(mysqli_error($con
                                 ?>
                                 <?php }?>
                                 <tr>
-                                    <th colspan="2" style="text-align: center"><h4>Total Spendings:</h4></th>
+                                    <th colspan="3" style="text-align: center"><h4>Total Spendings:</h4></th>
                                     <th style='text-align:right; color:red;'><?php echo "<h4>- "."$total</h4>";?></th>
                                 </tr>
                             </tbody>

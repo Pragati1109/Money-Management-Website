@@ -4,7 +4,7 @@ session_start();
 
 header('location: login.php');
 
-$con = mysqli_connect('localhost','root','');
+include "sub/con1.php";
 
 mysqli_select_db($con,'mm');
 
